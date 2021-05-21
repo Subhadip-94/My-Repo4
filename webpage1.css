@@ -1,0 +1,92 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+
+	/*We need to take a universal selector and reset everything to zero.*/
+}
+
+header{
+	background-image: url("kerala.jpg");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+
+	/*beach.jpg is the image height is 100 vertical height*/
+	/*background-size is set cover to cover entire page*/
+	/*background-position is set at center*/
+}
+
+ul{
+	float:right;
+	list-style: none;
+	margin-top:25px;
+	margin-right:60px;
+
+	/*links will be moved to right and ul list bullets will be removed*/
+}
+ul li{
+	display:inline;
+	/*inline means in a single line and block means next line but inline block means it will act as both*/
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding:5px 20px;
+	border:1px solid transparent;
+	transition:0.6 ease;
+
+	/*links will be in white color and get underlines removed.1px solid white border is given.transition will make the hovering look smooth*/
+}
+
+ul li a:hover{
+	background-color:white;
+	color:black;
+
+/*on hovering over the links the background will be white and the font color of link will be black*/
+}
+
+ul li.active a{
+	background-color:white;
+	color:black;
+	/*When active on home link then background will be white and font color is black */
+}
+
+.logo img{
+	width:150px;
+	height:auto;
+	margin-top:20px;
+	margin-left:20px;
+	/*width of logo is given and margin top and left is given*/
+}
+.title{
+	color:white;
+	font-size:35px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	/*font color of title is white,35px font size.from top and left the title will be placed at percenth position of screen*/
+}
+.button{
+	font-size:20px;
+	position:absolute;
+	top:62%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	transition:0.6s ease;
+
+}
+.button-link{
+	border:1px solid white;
+	padding:10px 30px;
+	color:white;
+	text-decoration:none;
+	/*a white border surounds the button hyperlinks and color of the hyperlinks are white*/
+}
+.button-link:hover{
+	background-color:white;
+	color:black;
+
+	/*on hovering over hyperlinks,the background color is white and font color is black*/
+}
